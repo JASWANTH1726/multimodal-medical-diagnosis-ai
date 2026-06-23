@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv
+.env
+data/raw/
+data/processed/
+models/*.pt
+models/*.pth
+logs/
+.pytest_cache/
+.coverage
+.DS_Store
+*.ipynb
+.wandb/
