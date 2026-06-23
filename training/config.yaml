@@ -1,0 +1,31 @@
+# Training Configuration
+
+epochs: 50
+batch_size: 32
+learning_rate: 1e-4
+weight_decay: 1e-5
+
+# Model Configuration
+model:
+  num_classes: 5
+  fusion_type: 'concat'
+  image_model: 'resnet50'
+
+# Data Configuration
+data:
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  image_size: 224
+  
+# Training Configuration
+training:
+  optimizer: 'adam'
+  scheduler: 'cosine'
+  criterion: 'cross_entropy'
+  
+# Paths
+paths:
+  data_dir: 'data/processed'
+  model_dir: 'models'
+  log_dir: 'logs'
